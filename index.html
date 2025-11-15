@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace - BelaBeliKu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>BelaBeliKu</h2>
+  <input type="text" id="search" placeholder="Cari produk...">
+  <div id="cart-btn">🛒 <span id="cart-count">0</span></div>
+</header>
+
+<div class="products" id="product-list"></div>
+
+<!-- CART SIDEBAR -->
+<div id="cart-sidebar">
+  <h3>Keranjang Belanja</h3>
+  <div id="cart-items"></div>
+  <div class="cart-footer">
+    <p>Total: <span id="cart-total">Rp 0</span></p>
+    <button id="checkout">Checkout via WhatsApp</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
