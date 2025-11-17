@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marketplace - BelaBeliKu</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bela Beli Ku</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h2>BelaBeliKu</h2>
-  <input type="text" id="search" placeholder="Cari produk...">
-  <div id="cart-btn">🛒 <span id="cart-count">0</span></div>
-</header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Bela Beli Ku</div>
+        <ul class="nav-links">
+            <li><a href="#">Homepage</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contuct Us</a></li>
+        </ul>
+        <button class="cart-btn">Buy(0)</button>
+    </nav>
 
-<div class="products" id="product-list"></div>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Welcome to Bela Beli Ku</h1>
+        <p>Produk berkualitas</p>
+    </section>
 
-<!-- CART SIDEBAR -->
-<div id="cart-sidebar">
-  <h3>Keranjang Belanja</h3>
-  <div id="cart-items"></div>
-  <div class="cart-footer">
-    <p>Total: <span id="cart-total">Rp 0</span></p>
-    <button id="checkout">Checkout via WhatsApp</button>
-  </div>
-</div>
+    <!-- Product Category -->
+    <section class="gallery">
+        <h2>Our Gallery</h2>
 
-<script src="script.js"></script>
+        <div class="category-list">
+            <button class="active">All Product</button>
+            <button>Books</button>
+            <button>Shirts</button>
+        </div>
+    </section>
+
 </body>
 </html>
