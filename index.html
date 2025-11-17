@@ -3,39 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bela Beli Ku</title>
+    <title>BelaBeliKu – Koperasi Desa Merah Putih</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">Bela Beli Ku</div>
+        <div class="logo">
+            <span class="logo-circle">K</span>
+            <span class="logo-text">Koperasi Desa Merah Putih</span>
+        </div>
+
         <ul class="nav-links">
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contuct Us</a></li>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">Kontak</a></li>
         </ul>
-        <button class="cart-btn">Buy(0)</button>
+
+        <button class="cart-btn">
+            🛒 Keranjang <span class="badge">0</span>
+        </button>
     </nav>
 
-    <!-- Hero -->
+    <!-- HERO SECTION -->
     <section class="hero">
-        <h1>Welcome to Bela Beli Ku</h1>
-        <p>Produk berkualitas</p>
+        <h1>Selamat Datang di Koperasi Desa Merah Putih</h1>
+        <p>Produk berkualitas langsung dari masyarakat Kalurahan Kedungsari</p>
     </section>
 
-    <!-- Product Category -->
-    <section class="gallery">
-        <h2>Our Gallery</h2>
+    <!-- PRODUK -->
+    <section class="produk" id="produk">
+        <h2>Galeri Produk Kami</h2>
 
-        <div class="category-list">
-            <button class="active">All Product</button>
-            <button>Books</button>
-            <button>Shirts</button>
+        <div class="kategori">
+            <button class="aktif">Semua Produk</button>
+            <button>Madu</button>
+            <button>Minuman</button>
+            <button>Beras</button>
+            <button>Pertanian</button>
+            <button>Telur</button>
+            <button>Ikan</button>
+            <button>Gula</button>
+            <button>Minyak Goreng</button>
+            <button>Sayuran</button>
+            <button>Daging</button>
+            <button>Olahan</button>
+            <button>Lain-lain</button>
         </div>
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
