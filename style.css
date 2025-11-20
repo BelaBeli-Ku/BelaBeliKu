@@ -14,21 +14,40 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 /* LOGO */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
 .logo-circle {
     width: 48px;
     height: 48px;
     background: #ff6f61;
     border-radius: 50%;
     color: white;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
+.main-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sub-title {
+    font-size: 12px;
+    color: #777;
+}
+
+/* MENU */
 .menu {
     list-style: none;
     display: flex;
@@ -38,6 +57,17 @@ body {
 .menu a {
     text-decoration: none;
     color: #555;
+    font-size: 15px;
+}
+
+/* CART BUTTON */
+.cart-btn {
+    text-decoration: none;
+    background: #615EFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 /* HERO */
@@ -46,7 +76,7 @@ body {
     color: white;
     padding: 70px 20px;
     text-align: center;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 20px 20px;
 }
 
 .small-hero {
@@ -56,16 +86,18 @@ body {
 /* KATEGORI */
 .kategori {
     display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 20px;
     justify-content: center;
-    gap: 12px;
-    margin: 25px;
 }
 
 .kategori button {
-    padding: 10px 18px;
-    border-radius: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
     border: 1px solid #ff6f61;
     background: white;
+    cursor: pointer;
 }
 
 .kategori .aktif {
@@ -73,7 +105,7 @@ body {
     color: white;
 }
 
-/* PRODUK GRID */
+/* GRID PRODUK */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -107,7 +139,7 @@ body {
     padding: 25px;
     margin: 40px;
     background: #fff5f3;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .cart-item {
