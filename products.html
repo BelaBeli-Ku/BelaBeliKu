@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produk - Koperasi Desa Merah Putih</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo-area">
+        <div class="logo-circle">K</div>
+        <div>
+            <div class="title-main">KOPERASI DESA MERAH PUTIH</div>
+            <div class="title-small">Kalurahan Kedungsari</div>
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="products.html">Produk</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Kontak</a></li>
+    </ul>
+
+    <a class="cart-btn" href="products.html#keranjang">
+        🛒 Keranjang <span class="cart-badge" id="cart-count">0</span>
+    </a>
+</nav>
+
+<!-- HEADER -->
+<section class="hero small-hero">
+    <h1>Daftar Produk</h1>
+    <p>Pilih produk terbaik dari masyarakat Kalurahan Kedungsari</p>
+</section>
+
+<!-- GRID PRODUK -->
+<section class="product-grid">
+    <div class="product-card">
+        <img src="img/madu.jpg">
+        <h3>Madu Asli</h3>
+        <p>Rp 35.000</p>
+        <button onclick="addToCart('Madu Asli', 35000)">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product-card">
+        <img src="img/beras.jpg">
+        <h3>Beras Premium 5kg</h3>
+        <p>Rp 65.000</p>
+        <button onclick="addToCart('Beras Premium 5kg', 65000)">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="product-card">
+        <img src="img/telur.jpg">
+        <h3>Telur Ayam 1kg</h3>
+        <p>Rp 27.000</p>
+        <button onclick="addToCart('Telur Ayam 1kg', 27000)">Tambah ke Keranjang</button>
+    </div>
+</section>
+
+<!-- KERANJANG -->
+<section class="cart-box" id="keranjang">
+    <h2>Keranjang Belanja</h2>
+    <div id="cart-items"></div>
+
+    <h3>Total: <span id="cart-total">Rp 0</span></h3>
+
+    <button class="wa-btn" onclick="checkoutWA()">Checkout via WhatsApp</button>
+</section>
+
+<script src="cart.js"></script>
+</body>
+</html>
