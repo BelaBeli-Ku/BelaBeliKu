@@ -1,147 +1,63 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Koperasi Desa Merah Putih</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koperasi Desa Merah Putih</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
 
-<style>
-    body {
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        background: #ffffff;
-        color: #333;
-    }
+<body>
 
-    /* NAVBAR --------------------------------------------------- */
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 18px 40px;
-        background: #fff;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="logo-area">
+        <div class="logo-circle">K</div>
+        <div class="logo-text">
+            <div class="main-title">KOPERASI DESA MERAH PUTIH</div>
+            <div class="sub-title">Kalurahan Kedungsari</div>
+        </div>
+    </div>
 
-    .logo-area {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
+    <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="products.html">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
 
-    .logo-circle {
-        width: 45px;
-        height: 45px;
-        background: #ff6f61;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-    }
+    <a href="products.html#keranjang" class="cart-btn">
+        🛒 Keranjang <span id="cart-count">0</span>
+    </a>
+</nav>
 
-    .title-small {
-        font-size: 13px;
-        margin-top: -4px;
-    }
+<!-- HERO SECTION -->
+<header class="hero">
+    <h1>Selamat Datang di Koperasi Desa Merah Putih</h1>
+    <p>Produk berkualitas langsung dari masyarakat Kalurahan Kedungsari</p>
+</header>
 
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 35px;
-    }
+<!-- GALERI PRODUK -->
+<section class="galeri">
+    <h2>Galeri Produk Kami</h2>
 
-    nav ul li a {
-        text-decoration: none;
-        color: #444;
-        font-weight: 500;
-        transition: 0.2s;
-    }
+    <div class="kategori">
+        <button class="aktif">Semua Produk</button>
+        <button>Madu</button>
+        <button>Minuman</button>
+        <button>Beras</button>
+        <button>Pertanian</button>
+        <button>Telur</button>
+        <button>Ikan</button>
+        <button>Gula</button>
+        <button>Minyak Goreng</button>
+        <button>Sayuran</button>
+        <button>Daging</button>
+        <button>Olahan</button>
+        <button>Lain-lain</button>
+    </div>
+</section>
 
-    nav ul li a:hover {
-        color: #ff6f61;
-    }
-
-    .cart-btn {
-        background: linear-gradient(45deg, #4950f6, #9f58ff);
-        padding: 10px 20px;
-        color: white;
-        border-radius: 25px;
-        font-weight: 600;
-        text-decoration: none;
-        display: flex;
-        gap: 8px;
-        align-items: center;
-    }
-    
-    .cart-badge {
-        background: #ff3b3b;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        font-size: 12px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* HERO --------------------------------------------------- */
-    .hero {
-        background: #ff6f61;
-        color: white;
-        padding: 80px 40px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 45px;
-        margin-bottom: 10px;
-        font-weight: 700;
-    }
-
-    .hero p {
-        font-size: 18px;
-        margin-top: 0;
-    }
-
-    /* PRODUCT CATEGORY ---------------------------------------- */
-    .section-title {
-        text-align: center;
-        margin-top: 60px;
-        margin-bottom: 20px;
-        font-size: 32px;
-        font-weight: bold;
-        color: #333;
-    }
-
-    .categories {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-        padding: 20px 40px;
-    }
-
-    .category-btn {
-        padding: 10px 25px;
-        border-radius: 25px;
-        border: 2px solid #ff6f61;
-        background: white;
-        color: #ff6f61;
-        cursor: pointer;
-        transition: 0.3s;
-        font-weight: 500;
-    }
-
-    .category-btn:hover {
-        background: #ff6f61;
-        color: white;
-    }
-
-    .category-btn.active {
-        background: linear-gradient(45deg, #ff
+</body>
+</html>
